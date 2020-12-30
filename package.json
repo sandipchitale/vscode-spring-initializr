@@ -1,0 +1,46 @@
+{
+	"name": "vscode-spring-initializr-webview",
+	"displayName": "Spring Initializr in VSCode Webview",
+	"icon": "images/icon.png",
+	"description": "Spring Initializr in VSCode",
+	"version": "1.0.3",
+	"publisher": "sandipchitale",
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sandipchitale/vscode-spring-initializr.git"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vscode-spring-initializr-webview.start",
+				"title": "Spring Initializr",
+				"category": "Springboot"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -w -p ./"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^3.0.2",
+		"@typescript-eslint/parser": "^3.0.2",
+		"eslint": "^7.1.0",
+		"typescript": "^4.0.2",
+		"@types/vscode": "^1.47.0",
+		"@types/node": "^12.12.0"
+	}
+}
