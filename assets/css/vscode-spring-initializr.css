@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+#spring-initializr {
+  width: 100vw;
+  height: 100vh;
+}
